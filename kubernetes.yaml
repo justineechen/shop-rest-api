@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: shopify-deployment
+spec:
+  template:
+    metadata:
+      labels:
+        app: shopify
+    spec:
+      containers:
+      - name: shopify-app-container
+        image: gcr.io/subtle-harmony-234518/shopify-app:v1
+        ports:
+        - containerPort: 5000
