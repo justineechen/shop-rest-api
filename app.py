@@ -14,13 +14,25 @@ def get_shop(shop_id):
         abort(404)
     return jsonify({'shop': shop[0]})
 
+@app.route('/shopify/api/shops/', methods=['POST'])
+def add_shop():
+  if not request.json or not 'name' in request.json:
+    abort(400)
+  shop = {
+    'name': request.json['name'],
+    'id': request.json['id'],
+    'products': request.json['products'],
+    'orders': request.json['orders']
+  }
+  shops.append(shop)
+  return jsonify({'shop': shop}), 201
+
 
 #PRODUCT
 @app.route("/shopify/api/products", methods=['GET'])
 def get_all_products():
     products = helper_all_products()
     return jsonify({'products': products})
-
 
 
 #ORDER 
