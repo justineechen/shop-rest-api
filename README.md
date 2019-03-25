@@ -6,24 +6,7 @@ python app.py
 ```
 
 
-## Docker
 
-```
-docker build -t shop-app .
-```
-
-```
-docker run -d -p 5000:5000 shop-app
-```
-
-Teardown
-```
-docker stop shop-app
-```
-
-```
-docker rm shop-app
-```
 
 ## Endpoints
 
