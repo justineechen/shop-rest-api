@@ -1,0 +1,21 @@
+Launching defaultServer (Open Liberty 19.0.0.2/wlp-1.0.25.cl190220190222-1311) on Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_201-b09 (en_US)
+[AUDIT   ] CWWKE0001I: The server defaultServer has been launched.
+[AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
+[WARNING ] SRVE9967W: The manifest class path jaxb-api.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path jaxb-runtime-2.3.2.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path txw2-2.3.2.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path istack-commons-runtime-3.0.8.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path stax-ex-1.8.1.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path FastInfoset-1.2.16.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path jakarta.activation-api-1.2.1.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path jaxb-api.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path jaxb-runtime-2.3.2.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path txw2-2.3.2.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path istack-commons-runtime-3.0.8.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path stax-ex-1.8.1.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path FastInfoset-1.2.16.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[WARNING ] SRVE9967W: The manifest class path jakarta.activation-api-1.2.1.jar can not be found in jar file file:/Users/justine.chenibm.com/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.2/jaxb-impl-2.3.2.jar or its parent.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://192.168.99.1:9080/LibertyProject/
+[AUDIT   ] CWWKZ0001I: Application shopify started in 0.625 seconds.
+[AUDIT   ] CWWKF0012I: The server installed the following features: [jsonb-1.0, servlet-4.0, jsonp-1.1, jaxrsClient-2.1, jaxrs-2.1].
+[AUDIT   ] CWWKF0011I: The server defaultServer is ready to run a smarter planet.

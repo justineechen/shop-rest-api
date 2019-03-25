@@ -1,0 +1,8 @@
+shopify/service/Reader.class
+shopify/Consumer.class
+shopify/model/Product.class
+shopify/model/Shop.class
+shopify/service/ShopResource.class
+shopify/model/LineItem.class
+shopify/model/Order.class
+shopify/service/ShopApplication.class

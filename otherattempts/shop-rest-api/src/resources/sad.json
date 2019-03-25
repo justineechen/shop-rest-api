@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "foo",
+        "products" : [
+            {
+                "title" : "album_one",
+                "shop" : "foo",
+                "ntracks" : 12
+            },
+            {
+                "title" : "album_two",
+                "shop" : "foo",
+                "ntracks" : 15
+            }
+        ]
+    }, 
+    {
+        "name" : "bar",
+        "products" : [
+            {
+                "title" : "foo walks into a bar",
+                "shop" : "bar",
+                "ntracks" : 12
+            }
+        ]
+    }, 
+    {
+        "name" : "dj",
+        "products" : [
+        ]
+    }
+]
