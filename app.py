@@ -163,13 +163,6 @@ def make_product(name, id, price, lineitems):
   product["price"] = price 
   lineitems["lineitems"] = lineitems
 
-def make_shop():
-
-
-
-
-
-
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0')
+  app.run(debug=True,host='0.0.0.0')
