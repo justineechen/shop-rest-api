@@ -5,7 +5,29 @@
 python app.py
 ```
 
+## Docker
 
+```
+docker build -t shop-app .
+```
+
+```
+docker run -d -p 5000:5000 shop-app
+```
+
+Teardown
+Get the container id of shop-app
+```
+docker container ls
+```
+
+```
+docker stop [container-id]
+```
+
+```
+docker rm [container-id]
+```
 
 
 ## Endpoints
