@@ -8,23 +8,21 @@ shops = [
         "id": 23,
         "products": [
           {
-            "name": "",
-            "id": "",
+            "name": "Shirt",
+            "id": 1,
             "shop":"Aritzia",
-            "price": {},
+            "price": 20.00,
             "lineitems": [
               {
                 "name": "",
                 "id": "",
-                "productName": "",
                 "quantity": "",
                 "price": ""
               },
               {
                 "name": "",
                 "id": "",
-                "productName": "",
-                "quantity": "",
+                "quantity": 2,
                 "price": ""
               }
             ]
@@ -38,7 +36,6 @@ shops = [
               {
                 "name": "",
                 "id": "",
-                "productName": "",
                 "quantity": "",
                 "price": ""
               }
@@ -54,14 +51,12 @@ shops = [
               {
                 "name": "",
                 "id": "",
-                "productName": "",
                 "quantity": "",
                 "price": ""
               },
               {
                 "name": "",
                 "id": "",
-                "productName": "",
                 "quantity": "",
                 "price": ""
               }
@@ -76,13 +71,11 @@ shops = [
           {
             "name": "",
             "id": "",
-            "price": {},
+            "price": "",
             "lineitems": [
               {
                 "name": "",
                 "id": "",
-                "shop":"Haven",
-                "productName": "",
                 "quantity": "",
                 "price": ""
               }
@@ -96,18 +89,16 @@ shops = [
           "price": "",
           "lineitems": [
             {
-              "name": "",
-              "id": "",
-              "productName": "",
-              "quantity": "",
-              "price": ""
+                "name": "",
+                "id": "",
+                "quantity": "",
+                "price": ""
             },
             {
-              "name": "",
-              "id": "",
-              "productName": "",
-              "quantity": "",
-              "price": ""
+                "name": "",
+                "id": "",
+                "quantity": "",
+                "price": ""
             }
           ]
         }
@@ -128,10 +119,60 @@ def get_shop(shop_id):
 
 @app.route("/shopify/api/products", methods=['GET'])
 def get_all_products():
+    products = helper_all_products()
+    return jsonify({'products': products})
+
+@app.route("/shopify/api/orders", methods=['GET'])
+def get_all_orders():
+    orders = helper_all_orders()
+    print("ORDERS")
+    print(orders)
+    return jsonify({'orders': orders})
+
+def helper_all_products():
     products = []
     for shop in shops:
-        products.append(shop['products'])
-    return jsonify({'products': products})
+      products = products + shop['products']
+        # products.append(shop['products'])
+    return products
+
+def helper_all_orders():
+    orders = []
+    for shop in shops:
+      orders = orders + shop['orders']
+      # orders.append(shop['orders'])
+    return orders
+
+
+
+#Populate data 
+def make_lineitem(name, id, quantity, price):
+  lineitem = dict()
+  lineitem["name"] = name
+  lineitem["id"] = id
+  lineitem["quantity"] = quantity
+  lineitem["price"] = price
+
+def make_order(name, id, price, lineitems):
+  order = dict()
+  order["name"] = name
+  order["id"] = id
+  order["price"] = price 
+  lineitems["lineitems"] = lineitems
+
+def make_product(name, id, price, lineitems):
+  product = dict()
+  product["name"] = name
+  product["id"] = id
+  product["price"] = price 
+  lineitems["lineitems"] = lineitems
+
+def make_shop():
+
+
+
+
+
 
 
 if __name__ == '__main__':
