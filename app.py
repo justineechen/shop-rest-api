@@ -133,17 +133,13 @@ def helper_all_products():
     products = []
     for shop in shops:
       products = products + shop['products']
-        # products.append(shop['products'])
     return products
 
 def helper_all_orders():
     orders = []
     for shop in shops:
       orders = orders + shop['orders']
-      # orders.append(shop['orders'])
     return orders
-
-
 
 #Populate data 
 def make_lineitem(name, id, quantity, price):
